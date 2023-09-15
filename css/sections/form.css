@@ -1,0 +1,158 @@
+.checkout {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	max-width: 465px;
+	width: 100%;
+	gap: 38px;
+}
+
+.checkout h5 {
+	color: var(--color-gay-1);
+	font-size: clamp(14px, 1.5vw, 18px);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+
+	margin-bottom: 15px;
+}
+
+.form-contact,
+.form-shipping {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	color: var(--color-gray-2);
+	font-family: Montserrat;
+	font-size: clamp(10px, 1vw, 12px);
+	font-weight: 600;
+
+	margin-bottom: 6.97px;
+}
+
+input[type="text"],
+select {
+	border: 1px solid var(--color-gray-3);
+	padding: 18px 0px 18px 40px;
+	border-radius: 12px;
+
+	margin-bottom: 12px;
+
+	color: var(--color-gray-1);
+	font-family: var(--font);
+	font-size: clamp(12px, 1.5vw, 16px);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+input[type="text"]::placeholder,
+select::placeholder,
+.placeholder {
+	color: var(--color-gray-3);
+	font-family: Montserrat;
+	font-size: clamp(12px, 1.5vw, 16px);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	width: calc(80% - 10px);
+}
+
+.form-shipping-last {
+	display: flex;
+	flex-direction: row;
+	gap: 31px;
+}
+
+.postal-code,
+.country {
+	flex: 1;
+	width: 100%;
+}
+
+.save {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	gap: 11px;
+}
+
+.save input[type="checkbox"] {
+	width: 21px;
+	height: 21px;
+
+	cursor: pointer;
+}
+
+.save label {
+	margin-bottom: 0px;
+}
+#email {
+	background: url("/assets/icon/mail.svg");
+	background-repeat: no-repeat;
+	background-position: 10px 16px;
+	background-size: 24px;
+}
+#phone {
+	background: url("/assets/icon/phone.svg");
+	background-repeat: no-repeat;
+	background-position: 10px 16px;
+	background-size: 24px;
+}
+#name {
+	background: url("/assets/icon/account.svg");
+	background-repeat: no-repeat;
+	background-position: 10px 16px;
+	background-size: 24px;
+}
+#address {
+	background: url("/assets/icon/home.svg");
+	background-repeat: no-repeat;
+	background-position: 10px 16px;
+	background-size: 24px;
+}
+#city {
+	background: url("/assets/icon/city.svg");
+	background-repeat: no-repeat;
+	background-position: 10px 16px;
+	background-size: 24px;
+}
+#country {
+	background: url("/assets/icon/world.svg");
+	background-repeat: no-repeat;
+	background-position: 10px 16px;
+	background-size: 24px;
+}
+#postal-code {
+	background: url("/assets/icon/postal.png");
+	background-repeat: no-repeat;
+	background-position: 10px 16px;
+	background-size: 24px;
+}
+
+input[type="submit"] {
+	border-radius: 12px;
+	border: none;
+	background: var(--color-orange);
+
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+
+	padding: 17px 45px;
+
+	margin-left: auto;
+	margin-top: 23px;
+
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	opacity: 0.8;
+}

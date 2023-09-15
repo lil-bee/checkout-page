@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="devchallenges.png">
+
+    <title>Checkout | lilbee</title>
+</head>
+
+<body>
+
+
+
+    <section class="header">
+        <h3>Checkout</h3>
+    </section>
+    <form class="center-body">
+        <section class="checkout">
+
+            <div class="checkout__form-contact">
+                <h5>Contact information</h5>
+                <div class="form-contact email">
+                    <label for="email">E-mail</label>
+                    <input required placeholder="Enter your email..." type="text" id="email">
+                </div>
+                <div class="form-contact phone">
+                    <label for="phone">Phone</label>
+                    <input required placeholder="Enter your phone..." type="text" id="phone">
+                </div>
+            </div>
+
+            <div class="checkout__form-address">
+                <h5>Shipping address</h5>
+
+                <div class="form-shipping name">
+                    <label for="name">Full name</label>
+                    <input required placeholder="Your name..." type="text" id="name">
+                </div>
+
+                <div class="form-shipping address">
+                    <label for="address">Address</label>
+                    <input required placeholder="Your address..." type="text" id="address">
+                </div>
+
+                <div class="form-shipping city">
+                    <label for="city">City</label>
+                    <input required placeholder="Your city..." type="text" id="city">
+                </div>
+
+                <div class="form-shipping-last">
+                    <div class="form-shipping country">
+                        <label for="country">Country</label>
+                        <select required id="country" name="country">
+                            <option class="placeholder" value="" disabled selected hidden>Your Country...</option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                    <div class="form-shipping postal-code">
+                        <label for="postal-code">Postal code</label>
+                        <input required placeholder="Your postal code..." type="text" id="postal-code">
+                    </div>
+                </div>
+                <div class="form-shipping save">
+                    <input required type="checkbox" name="save info" id="save-info">
+                    <label for="save">Save this inforation for next time</label>
+                </div>
+
+
+            </div>
+            <input required type="submit" value="Continue">
+        </section>
+
+        <section class="total">
+            <div class="total-items">
+                <div class="item">
+                    <div class="item__img">
+                        <img src="/assets/photo1.png" alt="">
+                    </div>
+                    <div class="item__desc">
+                        <div class="item__desc-props">
+                            <h5>Vintage Backbag</h5>
+                            <p>$54.99 <s>$94.99</s></p>
+                        </div>
+                        <div class="item__desc-count">
+                            <div class="count-container">
+                                <img src="/assets/icon/minus.svg" class="count-icon" />
+                                <input required type="number" class="count-field" />
+                                <img src="/assets/icon/add.svg" class="count-icon" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="/assets/photo2.png" alt="">
+                    </div>
+                    <div class="item__desc">
+                        <div class="item__desc-props">
+                            <h5>Levi Shoes</h5>
+                            <p>$74.99 <s>$124.99</s></p>
+                        </div>
+                        <div class="item__desc-count">
+                            <div class="count-container">
+                                <img src="/assets/icon/minus.svg" class="count-icon" />
+                                <input required type="number" class="count-field" />
+                                <img src="/assets/icon/add.svg" class="count-icon" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="total-cost">
+                <hr class="rounded">
+                <div class="cost-shiping">
+                    <h3>Shipping</h3>
+                    <p>$19</p>
+                </div>
+                <hr class="rounded">
+                <div class="cost-total">
+                    <h3>Total</h3>
+                    <p>$148.98</p>
+                </div>
+            </div>
+        </section>
+    </form>
+
+
+    <footer class="footer">
+        <p>created by <a href="https://github.com/lil-bee" target="_blank">lilbee</a> - devChallenges.io</p>
+    </footer>
+
+</body>
+
+</html>

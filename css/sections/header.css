@@ -1,0 +1,11 @@
+.header h3 {
+	color: #4e5150;
+	font-family: Montserrat;
+	font-size: clamp(24px, 2.5vw, 36px);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+
+	margin-bottom: 51px;
+	margin-top: 64px;
+}
